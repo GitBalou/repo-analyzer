@@ -2,3 +2,4 @@ dist
 node_modules
 .launch.json
 .env
+.vscode

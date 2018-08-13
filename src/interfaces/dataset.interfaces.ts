@@ -2,32 +2,32 @@
  * Github graphql data structure
  */
 export interface DataSet {
-    data: Data
+  data: Data
 }
 
 export interface Data {
-    repository: Repository
+  repository: Repository
 }
 
 export interface Repository {
-    issues: IssueConnection
+  issues: IssueConnection
 }
 
 export interface IssueConnection {
-    edges: IssueEdge[]
-    pageInfo: {
-        hasNextPage: boolean
-        endCursor: string
-    }
+  edges: IssueEdge[]
+  pageInfo: {
+    hasNextPage: boolean
+    endCursor: string
+  }
 }
 
 export interface IssueEdge {
-    node: Issue
+  node: Issue
 }
 
 export interface Issue {
-    title: string
-    comments: {
-        totalCount: number
-    }
+  title: string
+  comments: {
+    totalCount: number
+  }
 }

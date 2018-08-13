@@ -1,0 +1,30 @@
+{
+  "name": "repo-analyzer",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "author": "Gabriel Daudin",
+  "license": "MIT",
+  "bin": {
+    "rp": "dist/rp.js"
+  },
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "rm -rf dist && tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "dotenv-extended": "^2.2.0",
+    "gramophone": "^0.0.3",
+    "keyword-extractor": "^0.0.15",
+    "natural": "^0.6.1",
+    "text-miner": "^1.0.6"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/node": "^10.5.3",
+    "ts-node": "^7.0.0",
+    "tslint": "^5.11.0",
+    "tslint-config-standard": "^7.1.0",
+    "typescript": "^2.9.2"
+  }
+}
